@@ -15,7 +15,25 @@
 **Blockers / what I'm stuck on:**
 - None. Project setup went smoothly.
 
+## Day 2 — 2026-05-22
+**Hours worked:** 1.5
+**What I did:**
+- Researched Next.js 16 (2026 version) documentation for new APIs and ESLint changes.
+- Fixed `eslint.config.mjs` to be compatible with ESLint 9.
+- Created `PRICING_DATA.md` with defensible pricing rules for common AI tools.
+- Implemented `SpendForm.tsx` with dynamic tool adding/removing and total spend calculation.
+- Integrated local storage persistence for form state with SSR-safe state initialization.
+- Updated the landing page with a modern, Product Hunt-style layout using Tailwind CSS.
+- Verified the build and linting processes are passing.
+
+**What I learned:**
+- Next.js 16 has removed `next lint` and uses the ESLint CLI directly.
+- React 19/20+ (canary in Next.js 16) is more strict about synchronous `setState` inside effects, favoring state initializers for synchronization with external systems like local storage.
+
+**Blockers / what I'm stuck on:**
+- None.
+
 **Plan for tomorrow:**
-- Build the Spend Input Form.
-- Research and document initial pricing data in `PRICING_DATA.md`.
-- Implement local storage persistence for form state.
+- Implement the `auditEngine` utility to compare spend against `PRICING_DATA.md`.
+- Build the Savings Report visualization.
+- Integrate Anthropic API for personalized audit summaries.
